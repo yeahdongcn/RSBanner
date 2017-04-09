@@ -11,6 +11,8 @@
 
 @interface RSBannerViewController ()
 
+@property (nonatomic, strong) NSTimer *timer;
+
 @end
 
 @implementation RSBannerViewController
@@ -59,7 +61,29 @@ static NSString * const reuseIdentifier = @"Cell";
     flowLayout.itemSize = self.collectionView.bounds.size;
 }
 
-#pragma mark <UICollectionViewDataSource>
+#pragma mark - Public
+
+- (void)startRolling
+{
+    
+}
+
+- (void)stopRolling
+{
+    
+}
+
+- (void)addBannerTapHandler:(RSBannerTapHandler)handler
+{
+    
+}
+
+- (void)setRemoteImageLoadingBlock:(RSBannerRemoteImageLoadingBlock)loadingBlock
+{
+    
+}
+
+#pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
@@ -82,7 +106,7 @@ static NSString * const reuseIdentifier = @"Cell";
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
+#pragma mark - <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
