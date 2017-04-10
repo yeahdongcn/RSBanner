@@ -23,9 +23,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.bannerViewController = [RSBannerViewController new];
+    self.bannerViewController.rollingInterval = 3;
+    self.bannerViewController.rollingImages = @[@"a", @"b", @"c"];
+    [self.bannerViewController startRolling];
     [self addChildViewController:self.bannerViewController];
     [self.view addSubview:self.bannerViewController.view];
-    
     self.bannerViewController.view.frame = CGRectMake(0, 0, self.view.bounds.size.width, 200);
     self.bannerViewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.bannerViewController didMoveToParentViewController:self];

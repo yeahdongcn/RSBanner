@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A117AF751E9BDED000691D9D /* RSBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A117AF721E9BDED000691D9D /* RSBannerCell.m */; };
+		A117AF761E9BDED000691D9D /* RSBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A117AF741E9BDED000691D9D /* RSBannerViewController.m */; };
 		A15B3A781E9A62C000D2ED26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3A771E9A62C000D2ED26 /* main.m */; };
 		A15B3A7B1E9A62C000D2ED26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3A7A1E9A62C000D2ED26 /* AppDelegate.m */; };
 		A15B3A7E1E9A62C000D2ED26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3A7D1E9A62C000D2ED26 /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		A15B3A831E9A62C000D2ED26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15B3A821E9A62C000D2ED26 /* Assets.xcassets */; };
 		A15B3A861E9A62C000D2ED26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15B3A841E9A62C000D2ED26 /* LaunchScreen.storyboard */; };
 		A15B3A911E9A62C000D2ED26 /* RSBannerSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3A901E9A62C000D2ED26 /* RSBannerSampleTests.m */; };
-		A15B3AA21E9A669000D2ED26 /* RSBannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3AA11E9A669000D2ED26 /* RSBannerViewController.m */; };
-		A15B3AA51E9A673800D2ED26 /* RSBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A15B3AA41E9A673800D2ED26 /* RSBannerCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A117AF711E9BDED000691D9D /* RSBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBannerCell.h; sourceTree = "<group>"; };
+		A117AF721E9BDED000691D9D /* RSBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBannerCell.m; sourceTree = "<group>"; };
+		A117AF731E9BDED000691D9D /* RSBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBannerViewController.h; sourceTree = "<group>"; };
+		A117AF741E9BDED000691D9D /* RSBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBannerViewController.m; sourceTree = "<group>"; };
 		A15B3A731E9A62C000D2ED26 /* RSBannerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSBannerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15B3A771E9A62C000D2ED26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A15B3A791E9A62C000D2ED26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,10 +46,6 @@
 		A15B3A8C1E9A62C000D2ED26 /* RSBannerSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSBannerSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15B3A901E9A62C000D2ED26 /* RSBannerSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSBannerSampleTests.m; sourceTree = "<group>"; };
 		A15B3A921E9A62C000D2ED26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A15B3AA01E9A669000D2ED26 /* RSBannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBannerViewController.h; sourceTree = "<group>"; };
-		A15B3AA11E9A669000D2ED26 /* RSBannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBannerViewController.m; sourceTree = "<group>"; };
-		A15B3AA31E9A673800D2ED26 /* RSBannerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSBannerCell.h; sourceTree = "<group>"; };
-		A15B3AA41E9A673800D2ED26 /* RSBannerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSBannerCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +66,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A117AF701E9BDED000691D9D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A117AF711E9BDED000691D9D /* RSBannerCell.h */,
+				A117AF721E9BDED000691D9D /* RSBannerCell.m */,
+				A117AF731E9BDED000691D9D /* RSBannerViewController.h */,
+				A117AF741E9BDED000691D9D /* RSBannerViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		A15B3A6A1E9A62C000D2ED26 = {
 			isa = PBXGroup;
 			children = (
-				A15B3A9F1E9A632F00D2ED26 /* Source */,
+				A117AF701E9BDED000691D9D /* Source */,
 				A15B3A751E9A62C000D2ED26 /* RSBannerSample */,
 				A15B3A8F1E9A62C000D2ED26 /* RSBannerSampleTests */,
 				A15B3A741E9A62C000D2ED26 /* Products */,
@@ -116,17 +127,6 @@
 				A15B3A921E9A62C000D2ED26 /* Info.plist */,
 			);
 			path = RSBannerSampleTests;
-			sourceTree = "<group>";
-		};
-		A15B3A9F1E9A632F00D2ED26 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A15B3AA31E9A673800D2ED26 /* RSBannerCell.h */,
-				A15B3AA41E9A673800D2ED26 /* RSBannerCell.m */,
-				A15B3AA01E9A669000D2ED26 /* RSBannerViewController.h */,
-				A15B3AA11E9A669000D2ED26 /* RSBannerViewController.m */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A117AF761E9BDED000691D9D /* RSBannerViewController.m in Sources */,
+				A117AF751E9BDED000691D9D /* RSBannerCell.m in Sources */,
 				A15B3A7E1E9A62C000D2ED26 /* ViewController.m in Sources */,
-				A15B3AA21E9A669000D2ED26 /* RSBannerViewController.m in Sources */,
 				A15B3A7B1E9A62C000D2ED26 /* AppDelegate.m in Sources */,
 				A15B3A781E9A62C000D2ED26 /* main.m in Sources */,
-				A15B3AA51E9A673800D2ED26 /* RSBannerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +440,7 @@
 				A15B3A971E9A62C000D2ED26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A15B3A981E9A62C000D2ED26 /* Build configuration list for PBXNativeTarget "RSBannerSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +449,7 @@
 				A15B3A9A1E9A62C000D2ED26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
